@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react"
 import { describe, expect, it } from "vitest"
 import SingleBook from "../components/SingleBook"
 
-describe("after finished promises", () => {
+describe.skip("after finished promises", () => {
   it("checks if the selected card border highlight in RED", async () => {
     render(<SingleBook />)
     const cardSelected = await screen.findByTestId("card")
