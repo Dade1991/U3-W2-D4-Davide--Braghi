@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import SingleBook from './SingleBook'
-import { Col, Form, Row } from 'react-bootstrap'
-import CommentArea from './CommentArea'
+import { useState } from "react"
+import SingleBook from "./SingleBook"
+import { Col, Form, Row } from "react-bootstrap"
+import CommentArea from "./CommentArea"
 
 const BookList = (props) => {
-  const [searchQuery, setSearchQuery] = useState('')
+  const [searchQuery, setSearchQuery] = useState("")
   const [selectedBook, setSelectedBook] = useState(null)
 
   const changeSelectedBook = (asin) => {
